@@ -19,13 +19,13 @@
     <parent>
         <artifactId>hudi</artifactId>
         <groupId>org.apache.hudi</groupId>
-        <version>0.14.2-SNAPSHOT</version>
+        <version>0.14.2.1</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>hudi-kafka-connect</artifactId>
     <description>Kafka Connect Sink Connector for Hudi</description>
-    <version>0.14.2-SNAPSHOT</version>
+    <version>0.14.2.1</version>
     <packaging>jar</packaging>
 
     <properties>
@@ -177,6 +177,12 @@
             <groupId>org.apache.avro</groupId>
             <artifactId>avro</artifactId>
             <version>${avro.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.apache.commons</groupId>
+                    <artifactId>commons-compress</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
 
         <!-- Hadoop -->
@@ -212,6 +218,12 @@
             <classifier>tests</classifier>
             <type>test-jar</type>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.google.protobuf</groupId>
+            <artifactId>protoc</artifactId>
+            <version>3.21.5</version>
+            <type>pom</type>
         </dependency>
 
     </dependencies>

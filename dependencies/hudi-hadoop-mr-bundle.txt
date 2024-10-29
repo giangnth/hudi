@@ -78,7 +78,7 @@ hbase-protocol/org.apache.hbase/1.2.3//hbase-protocol-1.2.3.jar
 hbase-server/org.apache.hbase/1.2.3//hbase-server-1.2.3.jar
 hive-storage-api/org.apache.hive/2.6.0//hive-storage-api-2.6.0.jar
 htrace-core/org.apache.htrace/3.1.0-incubating//htrace-core-3.1.0-incubating.jar
-httpclient/org.apache.httpcomponents/4.4.1//httpclient-4.4.1.jar
+httpclient/org.apache.httpcomponents/4.5.14//httpclient-4.5.14.jar
 httpcore/org.apache.httpcomponents/4.4.1//httpcore-4.4.1.jar
 jackson-annotations/com.fasterxml.jackson.core/2.6.7//jackson-annotations-2.6.7.jar
 jackson-core/com.fasterxml.jackson.core/2.6.7//jackson-core-2.6.7.jar
@@ -118,7 +118,7 @@ parquet-encoding/org.apache.parquet/1.10.1//parquet-encoding-1.10.1.jar
 parquet-format/org.apache.parquet/2.4.0//parquet-format-2.4.0.jar
 parquet-hadoop/org.apache.parquet/1.10.1//parquet-hadoop-1.10.1.jar
 parquet-jackson/org.apache.parquet/1.10.1//parquet-jackson-1.10.1.jar
-protobuf-java/com.google.protobuf/2.5.0//protobuf-java-2.5.0.jar
+protobuf-java/com.google.protobuf/4.28.2//protobuf-java-4.28.2.jar
 rocksdbjni/org.rocksdb/5.17.2//rocksdbjni-5.17.2.jar
 servlet-api/javax.servlet/2.5//servlet-api-2.5.jar
 slf4j-api/org.slf4j/1.7.7//slf4j-api-1.7.7.jar

@@ -125,7 +125,7 @@ hk2-api/org.glassfish.hk2/2.4.0-b34//hk2-api-2.4.0-b34.jar
 hk2-locator/org.glassfish.hk2/2.4.0-b34//hk2-locator-2.4.0-b34.jar
 hk2-utils/org.glassfish.hk2/2.4.0-b34//hk2-utils-2.4.0-b34.jar
 htrace-core/org.apache.htrace/3.1.0-incubating//htrace-core-3.1.0-incubating.jar
-httpclient/org.apache.httpcomponents/4.4.1//httpclient-4.4.1.jar
+httpclient/org.apache.httpcomponents/4.5.14//httpclient-4.5.14.jar
 httpcore/org.apache.httpcomponents/4.4.1//httpcore-4.4.1.jar
 ion-java/software.amazon.ion/1.0.2//ion-java-1.0.2.jar
 ivy/org.apache.ivy/2.4.0//ivy-2.4.0.jar
@@ -218,7 +218,7 @@ parquet-encoding/org.apache.parquet/1.10.1//parquet-encoding-1.10.1.jar
 parquet-format/org.apache.parquet/2.4.0//parquet-format-2.4.0.jar
 parquet-hadoop/org.apache.parquet/1.10.1//parquet-hadoop-1.10.1.jar
 parquet-jackson/org.apache.parquet/1.10.1//parquet-jackson-1.10.1.jar
-protobuf-java/com.google.protobuf/3.17.3//protobuf-java-3.17.3.jar
+protobuf-java/com.google.protobuf/4.28.2//protobuf-java-4.28.2.jar
 py4j/net.sf.py4j/0.10.7//py4j-0.10.7.jar
 pyrolite/net.razorvine/4.13//pyrolite-4.13.jar
 reactive-streams/org.reactivestreams/1.0.2//reactive-streams-1.0.2.jar
