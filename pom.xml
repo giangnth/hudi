@@ -36,33 +36,33 @@
 
   <modules>
     <module>hudi-common</module>
-<!--    <module>hudi-cli</module>-->
+    <module>hudi-cli</module>
     <module>hudi-client</module>
     <module>hudi-aws</module>
-<!--    <module>hudi-gcp</module>-->
+    <module>hudi-gcp</module>
     <module>hudi-hadoop-mr</module>
     <module>hudi-spark-datasource</module>
-<!--    <module>hudi-timeline-service</module>-->
-<!--    <module>hudi-utilities</module>-->
-<!--    <module>hudi-sync</module>-->
-<!--    <module>packaging/hudi-hadoop-mr-bundle</module>-->
-<!--    <module>packaging/hudi-datahub-sync-bundle</module>-->
-<!--    <module>packaging/hudi-hive-sync-bundle</module>-->
-<!--    <module>packaging/hudi-aws-bundle</module>-->
-<!--    <module>packaging/hudi-gcp-bundle</module>-->
+    <module>hudi-timeline-service</module>
+    <module>hudi-utilities</module>
+    <module>hudi-sync</module>
+    <module>packaging/hudi-hadoop-mr-bundle</module>
+    <module>packaging/hudi-datahub-sync-bundle</module>
+    <module>packaging/hudi-hive-sync-bundle</module>
+    <module>packaging/hudi-aws-bundle</module>
+    <module>packaging/hudi-gcp-bundle</module>
     <module>packaging/hudi-spark-bundle</module>
-<!--    <module>packaging/hudi-presto-bundle</module>-->
-<!--    <module>packaging/hudi-utilities-bundle</module>-->
-<!--    <module>packaging/hudi-utilities-slim-bundle</module>-->
-<!--    <module>packaging/hudi-timeline-server-bundle</module>-->
-<!--    <module>packaging/hudi-trino-bundle</module>-->
+    <module>packaging/hudi-presto-bundle</module>
+    <module>packaging/hudi-utilities-bundle</module>
+    <module>packaging/hudi-utilities-slim-bundle</module>
+    <module>packaging/hudi-timeline-server-bundle</module>
+    <module>packaging/hudi-trino-bundle</module>
 <!--    <module>hudi-examples</module>-->
     <module>hudi-flink-datasource</module>
-<!--    <module>hudi-kafka-connect</module>-->
+    <module>hudi-kafka-connect</module>
     <module>packaging/hudi-flink-bundle</module>
-<!--    <module>packaging/hudi-kafka-connect-bundle</module>-->
-<!--    <module>packaging/hudi-cli-bundle</module>-->
-<!--    <module>hudi-tests-common</module>-->
+    <module>packaging/hudi-kafka-connect-bundle</module>
+    <module>packaging/hudi-cli-bundle</module>
+    <module>hudi-tests-common</module>
   </modules>
 
   <licenses>
@@ -112,7 +112,7 @@
     <junit.vintage.version>5.7.2</junit.vintage.version>
     <junit.platform.version>1.7.2</junit.platform.version>
     <mockito.jupiter.version>3.3.3</mockito.jupiter.version>
-    <log4j2.version>2.17.2</log4j2.version>
+    <log4j2.version>2.24.1</log4j2.version>
     <slf4j.version>1.7.36</slf4j.version>
     <joda.version>2.9.9</joda.version>
     <hadoop.version>3.4.0</hadoop.version>
@@ -131,7 +131,8 @@
     <prometheus.version>0.8.0</prometheus.version>
     <aws.sdk.httpclient.version>4.5.13</aws.sdk.httpclient.version>
     <aws.sdk.httpcore.version>4.4.13</aws.sdk.httpcore.version>
-    <http.version>4.4.1</http.version>
+    <http.version>4.5.13</http.version>
+    <httpcore.version>4.4.16</httpcore.version>
     <spark.version>${spark3.version}</spark.version>
     <spark2.version>2.4.4</spark2.version>
     <spark3.version>3.4.1</spark3.version>
@@ -187,10 +188,10 @@
     <surefire-log4j.file>log4j2-surefire.properties</surefire-log4j.file>
     <thrift.version>0.12.0</thrift.version>
     <javalin.version>4.6.7</javalin.version>
-    <jetty.version>10.0.24</jetty.version>
+    <jetty.version>9.4.56.v20240826</jetty.version>
     <htrace.version>3.1.0-incubating</htrace.version>
     <hbase.version>2.4.18</hbase.version>
-    <h2.version>1.4.199</h2.version>
+    <h2.version>2.2.220</h2.version>
     <awaitility.version>3.1.2</awaitility.version>
     <skipTests>false</skipTests>
     <skipUTs>${skipTests}</skipUTs>
@@ -216,7 +217,7 @@
     <disruptor.version>3.4.2</disruptor.version>
     <antlr.version>4.8</antlr.version>
     <aws.sdk.version>2.18.40</aws.sdk.version>
-    <proto.version>4.28.2</proto.version>
+    <proto.version>3.25.5</proto.version>
     <protoc.version>3.21.5</protoc.version>
     <dynamodb.lockclient.version>1.2.0</dynamodb.lockclient.version>
     <zookeeper.version>3.9.2</zookeeper.version>
@@ -227,7 +228,7 @@
     <dynamodb-local.endpoint>http://localhost:${dynamodb-local.port}</dynamodb-local.endpoint>
     <springboot.version>2.7.3</springboot.version>
     <spring.shell.version>2.1.1</spring.shell.version>
-    <snappy.version>1.1.8.3</snappy.version>
+    <snappy.version>1.1.10.7</snappy.version>
   </properties>
 
   <scm>
@@ -492,6 +493,7 @@
               <include>org.apache.hbase.thirdparty:hbase-shaded-miscellaneous</include>
               <include>org.apache.hbase.thirdparty:hbase-shaded-netty</include>
               <include>org.apache.hbase.thirdparty:hbase-shaded-protobuf</include>
+              <include>org.apache.hbase.thirdparty:hbase-unsafe</include>
               <include>org.apache.htrace:htrace-core4</include>
               <!-- afterburner module for jackson performance -->
               <include>com.fasterxml.jackson.module:jackson-module-afterburner</include>
@@ -1165,7 +1167,7 @@
       <dependency>
         <groupId>org.apache.httpcomponents</groupId>
         <artifactId>httpcore</artifactId>
-        <version>${http.version}</version>
+        <version>${httpcore.version}</version>
       </dependency>
       <dependency>
         <groupId>org.apache.httpcomponents</groupId>
@@ -1780,17 +1782,17 @@
       <id>confluent</id>
       <url>https://packages.confluent.io/maven/</url>
     </repository>
-<!--    &lt;!&ndash; Nexus repository configuration &ndash;&gt;-->
-<!--    <repository>-->
-<!--      <id>mobio-nexus-repo</id>-->
-<!--      <url>http://192.168.5.28:8081/repository/mobio-flink-java</url>-->
-<!--      <releases>-->
-<!--        <enabled>true</enabled>-->
-<!--      </releases>-->
-<!--      <snapshots>-->
-<!--        <enabled>true</enabled>-->
-<!--      </snapshots>-->
-<!--    </repository>-->
+    <!-- Nexus repository configuration -->
+    <repository>
+      <id>mobio-nexus-repo</id>
+      <url>http://192.168.5.28:8081/repository/mobio-flink-java</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </repository>
   </repositories>
 
   <profiles>
