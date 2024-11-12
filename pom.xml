@@ -29,7 +29,7 @@
   <groupId>org.apache.hudi</groupId>
   <artifactId>hudi</artifactId>
   <packaging>pom</packaging>
-  <version>0.15.0</version>
+  <version>0.15.1</version>
   <description>Apache Hudi brings stream style processing on big data</description>
   <url>https://github.com/apache/hudi</url>
   <name>Hudi</name>
@@ -90,18 +90,18 @@
     <maven-deploy-plugin.version>2.4</maven-deploy-plugin.version>
     <genjavadoc-plugin.version>0.15</genjavadoc-plugin.version>
     <build-helper-maven-plugin.version>1.7</build-helper-maven-plugin.version>
-    <maven-enforcer-plugin.version>3.0.0-M1</maven-enforcer-plugin.version>
+    <maven-enforcer-plugin.version>3.5.0</maven-enforcer-plugin.version>
     <maven-docker-plugin.version>0.42.1</maven-docker-plugin.version>
 
     <java.version>1.8</java.version>
     <kryo.shaded.version>4.0.2</kryo.shaded.version>
-    <fasterxml.spark3.version>2.10.0</fasterxml.spark3.version>
+    <fasterxml.spark3.version>2.13.5</fasterxml.spark3.version>
     <fasterxml.version>${fasterxml.spark3.version}</fasterxml.version>
     <fasterxml.jackson.databind.version>${fasterxml.spark3.version}</fasterxml.jackson.databind.version>
     <fasterxml.jackson.module.scala.version>${fasterxml.spark3.version}</fasterxml.jackson.module.scala.version>
     <fasterxml.jackson.dataformat.yaml.version>${fasterxml.spark3.version}</fasterxml.jackson.dataformat.yaml.version>
-    <kafka.version>2.0.0</kafka.version>
-    <kafka.spark3.version>2.8.0</kafka.spark3.version>
+    <kafka.version>3.6.2</kafka.version>
+    <kafka.spark3.version>3.6.2</kafka.spark3.version>
     <pulsar.version>3.0.2</pulsar.version>
     <pulsar.spark.version>${pulsar.spark.scala12.version}</pulsar.spark.version>
     <pulsar.spark.scala11.version>2.4.5</pulsar.spark.scala11.version>
@@ -118,24 +118,25 @@
     <log4j2.version>2.17.2</log4j2.version>
     <slf4j.version>1.7.36</slf4j.version>
     <joda.version>2.9.9</joda.version>
-    <hadoop.version>2.10.2</hadoop.version>
+    <hadoop.version>3.3.6</hadoop.version>
     <hive.groupid>org.apache.hive</hive.groupid>
-    <hive.version>2.3.4</hive.version>
-    <hive.parquet.version>1.10.1</hive.parquet.version>
-    <hive.avro.version>1.8.2</hive.avro.version>
+    <hive.version>3.1.3</hive.version>
+    <hive.parquet.version>1.13.1</hive.parquet.version>
+    <hive.avro.version>1.11.4</hive.avro.version>
     <presto.version>0.273</presto.version>
     <trino.version>390</trino.version>
     <hive.exec.classifier>core</hive.exec.classifier>
     <metrics.version>4.1.1</metrics.version>
-    <orc.spark.version>1.6.0</orc.spark.version>
-    <orc.flink.version>1.5.6</orc.flink.version>
+    <orc.spark.version>1.9.4</orc.spark.version>
+    <orc.flink.version>1.9.4</orc.flink.version>
     <roaringbitmap.version>0.9.47</roaringbitmap.version>
-    <airlift.version>0.25</airlift.version>
+    <airlift.version>0.27</airlift.version>
     <tally.version>0.13.0</tally.version>
     <prometheus.version>0.8.0</prometheus.version>
     <aws.sdk.httpclient.version>4.5.13</aws.sdk.httpclient.version>
     <aws.sdk.httpcore.version>4.4.13</aws.sdk.httpcore.version>
-    <http.version>4.4.1</http.version>
+    <http.version>4.5.14</http.version>
+    <httpcore.version>4.4.16</httpcore.version>
     <spark.version>${spark3.version}</spark.version>
     <spark2.version>2.4.4</spark2.version>
     <spark3.version>3.5.1</spark3.version>
@@ -149,7 +150,7 @@
     <hudi.flink.module>hudi-flink1.18.x</hudi.flink.module>
     <flink.bundle.version>1.18</flink.bundle.version>
     <!-- This is fixed to match with version from flink-avro -->
-    <flink.avro.version>1.11.1</flink.avro.version>
+    <flink.avro.version>1.11.4</flink.avro.version>
     <flink.format.parquet.version>1.13.1</flink.format.parquet.version>
     <flink.connector.kafka.version>3.0.0-1.17</flink.connector.kafka.version>
     <flink.runtime.artifactId>flink-runtime</flink.runtime.artifactId>
@@ -178,7 +179,7 @@
     <avro.version>1.8.2</avro.version>
     <bijection-avro.version>0.9.7</bijection-avro.version>
     <caffeine.version>2.9.1</caffeine.version>
-    <commons.io.version>2.11.0</commons.io.version>
+    <commons.io.version>2.14.0</commons.io.version>
     <scala11.version>2.11.12</scala11.version>
     <scala12.version>2.12.10</scala12.version>
     <scala13.version>2.13.8</scala13.version>
@@ -191,11 +192,11 @@
     <scalatest.spark3.version>3.1.0</scalatest.spark3.version>
     <scalatest.version>${scalatest.spark3.version}</scalatest.version>
     <surefire-log4j.file>log4j2-surefire.properties</surefire-log4j.file>
-    <thrift.version>0.12.0</thrift.version>
+    <thrift.version>0.16.0</thrift.version>
     <javalin.version>4.6.7</javalin.version>
-    <jetty.version>9.4.53.v20231009</jetty.version>
+    <jetty.version>9.4.56.v20240826</jetty.version>
     <htrace.version>3.1.0-incubating</htrace.version>
-    <hbase.version>2.4.13</hbase.version>
+    <hbase.version>2.4.18</hbase.version>
     <h2.version>1.4.199</h2.version>
     <awaitility.version>3.1.2</awaitility.version>
     <skipTests>false</skipTests>
@@ -222,7 +223,7 @@
     <disruptor.version>3.4.2</disruptor.version>
     <antlr.version>4.8</antlr.version>
     <aws.sdk.version>2.18.40</aws.sdk.version>
-    <proto.version>3.21.7</proto.version>
+    <proto.version>3.25.5</proto.version>
     <protoc.version>3.21.5</protoc.version>
     <dynamodb.lockclient.version>1.2.0</dynamodb.lockclient.version>
     <zookeeper.version>3.5.7</zookeeper.version>
@@ -237,6 +238,8 @@
     <springboot.version>2.7.3</springboot.version>
     <spring.shell.version>2.1.1</spring.shell.version>
     <snappy.version>1.1.8.3</snappy.version>
+    <netty.version>4.1.108.Final</netty.version>
+    <hbase-shaded.version>4.1.8</hbase-shaded.version>
   </properties>
 
   <scm>
@@ -376,6 +379,9 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-deploy-plugin</artifactId>
         <version>${maven-deploy-plugin.version}</version>
+        <configuration>
+          <skip>true</skip>
+        </configuration>
         <executions>
           <execution>
             <id>default-deploy</id>
@@ -385,6 +391,25 @@
             </goals>
           </execution>
         </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.sonatype.plugins</groupId>
+        <artifactId>nexus-staging-maven-plugin</artifactId>
+        <version>1.6.13</version>
+        <executions>
+          <execution>
+            <id>default-deploy</id>
+            <phase>deploy</phase>
+            <goals>
+              <goal>deploy</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <serverId>nexus-mobio</serverId>
+          <nexusUrl>http://192.168.5.28:8081/repository/mobio-flink-java</nexusUrl>
+          <skipStaging>true</skipStaging>
+        </configuration>
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
@@ -426,6 +451,13 @@
                     <exclude>org.apache.hbase:hbase-server:*</exclude>
                     <!--To upgrade snappy because pre 1.1.8.2 does not work on m1 mac-->
                     <exclude>org.xerial.snappy:snappy-java:*</exclude>
+                    <exclude>org.apache.htrace:*</exclude>
+                    <exclude>io.netty:netty-codec-http:4.1.97.Final</exclude>
+                    <exclude>io.netty:netty-codec-http2:4.1.97.Final</exclude>
+                    <exclude>com.fasterxml.jackson.core:jackson-databind:2.4.0</exclude>
+                    <exclude>org.apache.hbase:hbase-protocol-shaded:*</exclude>
+                    <exclude>org.apache.hbase.thirdparty:hbase-shaded-netty:*</exclude>
+                    <exclude>org.apache.hbase.thirdparty:hbase-shaded-protobuf:*</exclude>
                   </excludes>
                   <includes>
                     <include>org.slf4j:slf4j-simple:*:*:test</include>
@@ -434,6 +466,12 @@
                     <include>org.apache.hbase:hbase-server:${hbase.version}</include>
                     <!--To upgrade snappy because pre 1.1.8.2 does not work on m1 mac-->
                     <include>org.xerial.snappy:snappy-java:${snappy.version}</include>
+                    <include>io.netty:netty-codec-http:${netty.version}</include>
+                    <include>io.netty:netty-codec-http2:${netty.version}</include>
+                    <include>com.fasterxml.jackson.core:jackson-databind:${fasterxml.version}</include>
+                    <include>org.apache.hbase:hbase-protocol-shaded:2.5.10</include>
+                    <include>org.apache.hbase.thirdparty:hbase-shaded-netty:${hbase-shaded.version}</include>
+                    <include>org.apache.hbase.thirdparty:hbase-shaded-protobuf:${hbase-shaded.version}</include>
                   </includes>
                 </bannedDependencies>
               </rules>
@@ -461,6 +499,10 @@
         <configuration>
           <!-- common to all bundles -->
           <artifactSet>
+            <excludes>
+              <exclude>org.apache.htrace:*</exclude>
+              <exclude>org.htrace:*</exclude>
+            </excludes>
             <includes>
               <include>org.apache.hudi:hudi-io</include>
               <include>io.airlift:aircompressor</include>
@@ -476,18 +518,23 @@
               <include>org.apache.hbase:hbase-metrics</include>
               <include>org.apache.hbase:hbase-metrics-api</include>
               <include>org.apache.hbase:hbase-protocol</include>
-              <include>org.apache.hbase:hbase-protocol-shaded</include>
+<!--              <include>org.apache.hbase:hbase-protocol-shaded</include>-->
               <include>org.apache.hbase:hbase-server</include>
               <include>org.apache.hbase.thirdparty:hbase-shaded-miscellaneous</include>
+
+              <include>org.apache.hbase:hbase-protocol-shaded</include>
               <include>org.apache.hbase.thirdparty:hbase-shaded-netty</include>
               <include>org.apache.hbase.thirdparty:hbase-shaded-protobuf</include>
               <include>org.apache.hbase.thirdparty:hbase-unsafe</include>
-              <include>org.apache.htrace:htrace-core4</include>
+
+<!--              <include>org.apache.htrace:htrace-core4</include>-->
               <!-- afterburner module for jackson performance -->
               <include>com.fasterxml.jackson.module:jackson-module-afterburner</include>
               <include>com.fasterxml.jackson.module:jackson-module-scala_${scala.binary.version}</include>
               <!-- native HFile reader uses protobuf -->
               <include>com.google.protobuf:protobuf-java</include>
+              <!-- libthrift -->
+              <include>org.apache.thrift:libthrift</include>
             </includes>
           </artifactSet>
           <relocations>
@@ -504,14 +551,14 @@
                 <exclude>org.apache.hadoop.hbase.KeyValue$KeyComparator</exclude>
               </excludes>
             </relocation>
-            <relocation>
-              <pattern>org.apache.hbase.</pattern>
-              <shadedPattern>org.apache.hudi.org.apache.hbase.</shadedPattern>
-            </relocation>
-            <relocation>
-              <pattern>org.apache.htrace.</pattern>
-              <shadedPattern>org.apache.hudi.org.apache.htrace.</shadedPattern>
-            </relocation>
+<!--            <relocation>-->
+<!--              <pattern>org.apache.hbase.</pattern>-->
+<!--              <shadedPattern>org.apache.hudi.org.apache.hbase.</shadedPattern>-->
+<!--            </relocation>-->
+<!--            <relocation>-->
+<!--              <pattern>org.apache.htrace.</pattern>-->
+<!--              <shadedPattern>org.apache.hudi.org.apache.htrace.</shadedPattern>-->
+<!--            </relocation>-->
             <!-- hbase
                  The classes below in org.apache.hadoop.metrics2 package come from
                  hbase-hadoop-compat and hbase-hadoop2-compat, which have to be shaded one by one,
@@ -986,6 +1033,14 @@
             <groupId>log4j</groupId>
             <artifactId>log4j</artifactId>
           </exclusion>
+          <exclusion>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>org.xerial.snappy</groupId>
+            <artifactId>snappy-java</artifactId>
+          </exclusion>
         </exclusions>
       </dependency>
 
@@ -1190,7 +1245,7 @@
       <dependency>
         <groupId>org.apache.httpcomponents</groupId>
         <artifactId>httpcore</artifactId>
-        <version>${http.version}</version>
+        <version>${httpcore.version}</version>
       </dependency>
       <dependency>
         <groupId>org.apache.httpcomponents</groupId>
@@ -1241,6 +1296,10 @@
             <groupId>log4j</groupId>
             <artifactId>log4j</artifactId>
           </exclusion>
+          <exclusion>
+            <groupId>org.apache.htrace</groupId>
+            <artifactId>*</artifactId>
+          </exclusion>
         </exclusions>
       </dependency>
       <dependency>
@@ -1252,6 +1311,10 @@
           <exclusion>
             <groupId>log4j</groupId>
             <artifactId>log4j</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>org.apache.htrace</groupId>
+            <artifactId>*</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -1289,6 +1352,14 @@
             <groupId>log4j</groupId>
             <artifactId>log4j</artifactId>
           </exclusion>
+          <exclusion>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-codec-http</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-codec-http2</artifactId>
+          </exclusion>
         </exclusions>
       </dependency>
       <dependency>
@@ -1322,6 +1393,10 @@
             <groupId>log4j</groupId>
             <artifactId>log4j</artifactId>
           </exclusion>
+          <exclusion>
+            <groupId>org.apache.htrace</groupId>
+            <artifactId>*</artifactId>
+          </exclusion>
         </exclusions>
       </dependency>
       <dependency>
@@ -1345,6 +1420,10 @@
           <exclusion>
             <groupId>log4j</groupId>
             <artifactId>log4j</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>org.apache.htrace</groupId>
+            <artifactId>*</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -1439,6 +1518,14 @@
           <exclusion>
             <groupId>log4j</groupId>
             <artifactId>log4j</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>org.apache.htrace</groupId>
+            <artifactId>*</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -1804,6 +1891,25 @@
         <artifactId>kafka-protobuf-serializer</artifactId>
         <version>${confluent.version}</version>
       </dependency>
+
+      <dependency>
+        <groupId>org.apache.hbase</groupId>
+        <artifactId>hbase-protocol-shaded</artifactId>
+        <version>2.5.10</version>
+        <exclusions>
+          <exclusion>
+            <groupId>org.apache.hbase.thirdparty</groupId>
+            <artifactId>hbase-shaded-protobuf</artifactId>
+          </exclusion>
+        </exclusions>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.hbase.thirdparty</groupId>
+        <artifactId>hbase-shaded-protobuf</artifactId>
+        <version>${hbase-shaded.version}</version>
+      </dependency>
+
     </dependencies>
   </dependencyManagement>
   <repositories>
@@ -1832,7 +1938,24 @@
       <id>confluent</id>
       <url>https://packages.confluent.io/maven/</url>
     </repository>
+    <!-- Nexus repository configuration -->
+    <repository>
+      <id>nexus-mobio</id>
+      <url>http://192.168.5.28:8081/repository/mobio-flink-java</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </repository>
   </repositories>
+  <distributionManagement>
+    <repository>
+      <id>nexus-mobio</id>
+      <url>http://192.168.5.28:8081/repository/mobio-flink-java</url>
+    </repository>
+  </distributionManagement>
 
   <profiles>
     <profile>
@@ -2519,9 +2642,9 @@
                    hudi-hadoop-mr, for ex). Since these Hudi modules might be used from w/in the execution engine(s)
                    bringing these file-formats as dependencies as well, we need to make sure that versions are
                    synchronized to avoid classpath ambiguity -->
-        <parquet.version>1.12.2</parquet.version>
-        <orc.spark.version>1.6.12</orc.spark.version>
-        <avro.version>1.10.2</avro.version>
+        <parquet.version>1.13.1</parquet.version>
+        <orc.spark.version>1.9.4</orc.spark.version>
+        <avro.version>1.11.4</avro.version>
         <antlr.version>4.8</antlr.version>
         <fasterxml.version>${fasterxml.spark3.version}</fasterxml.version>
         <fasterxml.jackson.databind.version>${fasterxml.spark3.version}</fasterxml.jackson.databind.version>
@@ -2563,11 +2686,11 @@
                    hudi-hadoop-mr, for ex). Since these Hudi modules might be used from w/in the execution engine(s)
                    bringing these file-formats as dependencies as well, we need to make sure that versions are
                    synchronized to avoid classpath ambiguity -->
-        <parquet.version>1.12.2</parquet.version>
-        <orc.spark.version>1.7.8</orc.spark.version>
-        <avro.version>1.11.1</avro.version>
+        <parquet.version>1.13.1</parquet.version>
+        <orc.spark.version>1.9.4</orc.spark.version>
+        <avro.version>1.11.4</avro.version>
         <antlr.version>4.8</antlr.version>
-        <fasterxml.spark3.version>2.13.3</fasterxml.spark3.version>
+        <fasterxml.spark3.version>2.13.5</fasterxml.spark3.version>
         <fasterxml.version>${fasterxml.spark3.version}</fasterxml.version>
         <fasterxml.jackson.databind.version>${fasterxml.spark3.version}</fasterxml.jackson.databind.version>
         <fasterxml.jackson.module.scala.version>${fasterxml.spark3.version}</fasterxml.jackson.module.scala.version>
@@ -2703,8 +2826,8 @@
     <profile>
       <id>flink1.18</id>
       <properties>
-        <orc.flink.version>1.5.6</orc.flink.version>
-        <flink.avro.version>1.11.1</flink.avro.version>
+        <orc.flink.version>1.9.4</orc.flink.version>
+        <flink.avro.version>1.11.4</flink.avro.version>
         <flink.format.parquet.version>1.13.1</flink.format.parquet.version>
       </properties>
       <activation>
@@ -2738,7 +2861,7 @@
         <flink.bundle.version>1.16</flink.bundle.version>
         <orc.flink.version>1.5.6</orc.flink.version>
         <flink.avro.version>1.11.1</flink.avro.version>
-        <flink.format.parquet.version>1.12.2</flink.format.parquet.version>
+        <flink.format.parquet.version>1.13.1</flink.format.parquet.version>
         <flink.connector.kafka.version>${flink1.16.version}</flink.connector.kafka.version>
       </properties>
       <activation>
@@ -2755,7 +2878,7 @@
         <flink.bundle.version>1.15</flink.bundle.version>
         <orc.flink.version>1.5.6</orc.flink.version>
         <flink.avro.version>1.11.1</flink.avro.version>
-        <flink.format.parquet.version>1.12.2</flink.format.parquet.version>
+        <flink.format.parquet.version>1.13.2</flink.format.parquet.version>
         <flink.connector.kafka.version>${flink1.15.version}</flink.connector.kafka.version>
       </properties>
       <activation>

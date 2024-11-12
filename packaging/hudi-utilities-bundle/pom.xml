@@ -19,7 +19,7 @@
   <parent>
     <artifactId>hudi</artifactId>
     <groupId>org.apache.hudi</groupId>
-    <version>0.15.0</version>
+    <version>0.15.1</version>
     <relativePath>../../pom.xml</relativePath>
   </parent>
   <modelVersion>4.0.0</modelVersion>
@@ -305,6 +305,16 @@
       <groupId>org.apache.parquet</groupId>
       <artifactId>parquet-avro</artifactId>
       <scope>compile</scope>
+      <exclusions>
+        <exclusion>
+          <groupId>com.fasterxml.jackson.core</groupId>
+          <artifactId>jackson-databind</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>org.xerial.snappy</groupId>
+          <artifactId>snappy-java</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
 
     <!-- Hive -->
@@ -355,12 +365,12 @@
       <scope>${utilities.bundle.hive.scope}</scope>
     </dependency>
 
-    <dependency>
-      <groupId>org.apache.htrace</groupId>
-      <artifactId>htrace-core</artifactId>
-      <version>${htrace.version}</version>
-      <scope>compile</scope>
-    </dependency>
+<!--    <dependency>-->
+<!--      <groupId>org.apache.htrace</groupId>-->
+<!--      <artifactId>htrace-core</artifactId>-->
+<!--      <version>${htrace.version}</version>-->
+<!--      <scope>compile</scope>-->
+<!--    </dependency>-->
 
     <!-- zookeeper -->
     <dependency>

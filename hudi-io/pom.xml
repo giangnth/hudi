@@ -22,7 +22,7 @@
   <parent>
     <artifactId>hudi</artifactId>
     <groupId>org.apache.hudi</groupId>
-    <version>0.15.0</version>
+    <version>0.15.1</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
 
@@ -142,6 +142,12 @@
       <artifactId>jul-to-slf4j</artifactId>
       <version>${slf4j.version}</version>
       <scope>provided</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>com.google.code.findbugs</groupId>
+      <artifactId>jsr305</artifactId>
+      <version>3.0.2</version>
     </dependency>
   </dependencies>
 </project>
