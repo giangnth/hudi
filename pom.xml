@@ -239,7 +239,7 @@
     <spring.shell.version>2.1.1</spring.shell.version>
     <snappy.version>1.1.8.3</snappy.version>
     <netty.version>4.1.115.Final</netty.version>
-    <hbase-shaded.version>4.1.9</hbase-shaded.version>
+    <hbase-shaded.version>4.1.10</hbase-shaded.version>
   </properties>
 
   <scm>
@@ -458,6 +458,7 @@
                     <exclude>org.apache.hbase:hbase-protocol-shaded:*</exclude>
                     <exclude>org.apache.hbase.thirdparty:hbase-shaded-netty:*</exclude>
                     <exclude>org.apache.hbase.thirdparty:hbase-shaded-protobuf:*</exclude>
+                    <exclude>com.google.protobuf:protobuf-java:*</exclude>
                   </excludes>
                   <includes>
                     <include>org.slf4j:slf4j-simple:*:*:test</include>
@@ -472,6 +473,7 @@
                     <include>org.apache.hbase:hbase-protocol-shaded:2.5.10</include>
                     <include>org.apache.hbase.thirdparty:hbase-shaded-netty:${hbase-shaded.version}</include>
                     <include>org.apache.hbase.thirdparty:hbase-shaded-protobuf:${hbase-shaded.version}</include>
+                    <include>com.google.protobuf:protobuf-java:${proto.version}</include>
                   </includes>
                 </bannedDependencies>
               </rules>
