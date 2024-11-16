@@ -103,6 +103,11 @@
                 <transformer implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"/>
               </transformers>
               <artifactSet>
+                <excludes>
+                  <exclude>org.apache.htrace:*</exclude>
+                  <exclude>org.htrace:*</exclude>
+                  <exclude>com.google.protobuf:*</exclude>
+                </excludes>
                 <includes combine.children="append">
                   <include>org.apache.hudi:hudi-hadoop-common</include>
                   <include>org.apache.hudi:hudi-common</include>
@@ -170,6 +175,9 @@
                   <include>org.apache.flink:flink-metrics-dropwizard</include>
 
                   <include>org.apache.hive:hive-common</include>
+                  <include>org.apache.hive:hive-classification</include>
+                  <include>org.apache.hive:hive-shims</include>
+                  <include>org.apache.hive:hive-serde</include>
                   <include>org.apache.hive:hive-service</include>
                   <include>org.apache.hive:hive-service-rpc</include>
                   <include>org.apache.hive:hive-exec</include>
@@ -320,6 +328,10 @@
         <exclusion>
           <groupId>org.eclipse.jetty</groupId>
           <artifactId>jetty-xml</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>com.google.protobuf</groupId>
+          <artifactId>protobuf-java</artifactId>
         </exclusion>
 <!--        <exclusion>-->
 <!--          <groupId>org.jetbrains.kotlin</groupId>-->
@@ -663,7 +675,7 @@
       <artifactId>hive-exec</artifactId>
       <version>${hive.version}</version>
       <scope>${flink.bundle.hive.scope}</scope>
-      <classifier>${hive.exec.classifier}</classifier>
+<!--      <classifier>${hive.exec.classifier}</classifier>-->
       <exclusions>
         <exclusion>
           <groupId>org.pentaho</groupId>
@@ -908,6 +920,18 @@
       <groupId>com.fasterxml.jackson.core</groupId>
       <artifactId>jackson-annotations</artifactId>
       <scope>compile</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.flink</groupId>
+      <artifactId>flink-parquet</artifactId>
+      <version>1.18.1</version>
+      <exclusions>
+        <exclusion>
+          <groupId>com.google.protobuf</groupId>
+          <artifactId>protobuf-java</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
   </dependencies>
 

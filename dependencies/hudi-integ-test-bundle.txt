@@ -274,7 +274,7 @@ parquet-format/org.apache.parquet/2.4.0//parquet-format-2.4.0.jar
 parquet-hadoop-bundle/org.apache.parquet/1.8.1//parquet-hadoop-bundle-1.8.1.jar
 parquet-hadoop/org.apache.parquet/1.10.1//parquet-hadoop-1.10.1.jar
 parquet-jackson/org.apache.parquet/1.10.1//parquet-jackson-1.10.1.jar
-protobuf-java/com.google.protobuf/2.5.0//protobuf-java-2.5.0.jar
+protobuf-java/com.google.protobuf/3.25.5//protobuf-java-3.25.5.jar
 py4j/net.sf.py4j/0.10.7//py4j-0.10.7.jar
 pyrolite/net.razorvine/4.13//pyrolite-4.13.jar
 rocksdbjni/org.rocksdb/5.17.2//rocksdbjni-5.17.2.jar

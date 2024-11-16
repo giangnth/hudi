@@ -251,7 +251,7 @@ parquet-format-structures/org.apache.parquet/1.11.1//parquet-format-structures-1
 parquet-hadoop-bundle/org.apache.parquet/1.8.1//parquet-hadoop-bundle-1.8.1.jar
 parquet-hadoop/org.apache.parquet/1.11.1//parquet-hadoop-1.11.1.jar
 parquet-jackson/org.apache.parquet/1.11.1//parquet-jackson-1.11.1.jar
-protobuf-java/com.google.protobuf/2.5.0//protobuf-java-2.5.0.jar
+protobuf-java/com.google.protobuf/3.25.5//protobuf-java-3.25.5.jar
 reactive-streams/org.reactivestreams/1.0.2//reactive-streams-1.0.2.jar
 scala-java8-compat_2.11/org.scala-lang.modules/0.7.0//scala-java8-compat_2.11-0.7.0.jar
 scala-library/org.scala-lang/2.11.12//scala-library-2.11.12.jar

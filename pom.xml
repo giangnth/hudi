@@ -133,8 +133,8 @@
     <airlift.version>0.27</airlift.version>
     <tally.version>0.13.0</tally.version>
     <prometheus.version>0.8.0</prometheus.version>
-    <aws.sdk.httpclient.version>4.5.13</aws.sdk.httpclient.version>
-    <aws.sdk.httpcore.version>4.4.13</aws.sdk.httpcore.version>
+    <aws.sdk.httpclient.version>4.5.14</aws.sdk.httpclient.version>
+    <aws.sdk.httpcore.version>4.4.16</aws.sdk.httpcore.version>
     <http.version>4.5.14</http.version>
     <httpcore.version>4.4.16</httpcore.version>
     <spark.version>${spark3.version}</spark.version>
@@ -222,9 +222,9 @@
     <zk-curator.version>2.7.1</zk-curator.version>
     <disruptor.version>3.4.2</disruptor.version>
     <antlr.version>4.8</antlr.version>
-    <aws.sdk.version>2.18.40</aws.sdk.version>
+    <aws.sdk.version>2.25.69</aws.sdk.version>
     <proto.version>3.25.5</proto.version>
-    <protoc.version>3.21.5</protoc.version>
+    <protoc.version>3.25.5</protoc.version>
     <dynamodb.lockclient.version>1.2.0</dynamodb.lockclient.version>
     <zookeeper.version>3.5.7</zookeeper.version>
     <openjdk.jol.version>0.16</openjdk.jol.version>
@@ -504,6 +504,7 @@
             <excludes>
               <exclude>org.apache.htrace:*</exclude>
               <exclude>org.htrace:*</exclude>
+              <exclude>com.google.protobuf:*</exclude>
             </excludes>
             <includes>
               <include>org.apache.hudi:hudi-io</include>
@@ -534,7 +535,7 @@
               <include>com.fasterxml.jackson.module:jackson-module-afterburner</include>
               <include>com.fasterxml.jackson.module:jackson-module-scala_${scala.binary.version}</include>
               <!-- native HFile reader uses protobuf -->
-              <include>com.google.protobuf:protobuf-java</include>
+<!--              <include>com.google.protobuf:protobuf-java</include>-->
               <!-- libthrift -->
               <include>org.apache.thrift:libthrift</include>
             </includes>
